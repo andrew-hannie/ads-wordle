@@ -1,5 +1,5 @@
 words = open("words_alpha.txt", 'r')
 newFile = open("words_5_letter.txt", "w")
 for i in words:
-    if len(i) == 6:
+    if len(i) == 6: # accounts for \n
         newFile.write(i)
